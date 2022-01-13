@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  background-color:black;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #444544;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#logo a {
+  color: #e6c834;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+
+#mobile-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#mobile-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+ 
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #mobile-icon {
+    display: block;
+  }
+}
+
+
+.section-title{
+  color: white;
+  font-size: 4em;
+  padding-top: 1em;
+  padding-left: 0.7em;
+
+  
+}
+
+#fab {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+
+
+.grid > div{
+   padding:1em;
+   background-color:rgba(255, 235, 205, 0);
+}
+
+.grid > div:nth-child(odd){
+  background-color:rgba(255, 248, 220, 0.003);
+  
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 40% 60%;
+  /* seperating columns */
+  grid-column-gap: -40em;
+  box-sizing: border-box;
+
+  /* browser automatically breaks when it gets to 300px */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.text-grid {
+  padding: 10em;
+  color:white;
+
+
+
+  
+  
+}
+
+
+
+/* Buttons  */
+
+a.button{
+  display:inline-block;
+  padding:0.55em 2.2em;
+  border:none;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  background-color:#F62AA0;
+  float:right;
+  
+  font-weight:400;
+  font-size:2em;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+
+  
+    
+  }
+
+  @media only screen and (max-width: 600px){
+    a.button{
+      display:inline-block;
+      padding:0.45em 1.8em;
+      border:none;
+      /* margin:0 0.1em 0.3em 0; */
+      border-radius:0.12em;
+      box-sizing: border-box;
+      text-decoration:none;
+      background-color:#F62AA0;
+      float:left;
+      
+      font-weight:400;
+      font-size:1.5em;
+      color:#FFFFFF;
+      text-align:center;
+      transition: all 0.2s;
+    }
+  }
+  a.button1:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+  @media all and (max-width:30em){
+  a.button1{
+  display:block;
+  margin:0.4em auto;
+
+  }
+  }
+
+  .img {
+    float:right;
+ 
+  }
+
+
+  .inside {   
+  
+    width: 100%;
+   height: 100%;
+   background: #2E4249; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 500px;
+    transition: all 1s ease; 
+   
+  } 
+  .inside:hover {
+    background: #3b5159; 
+  } 
